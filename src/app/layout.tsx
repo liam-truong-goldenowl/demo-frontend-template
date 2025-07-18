@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { fontClasses } from '@/styles/fonts';
+import { ThemeProvider } from '@/shared/components/ThemeProvider';
 
 import '@/styles/globals.css';
 
@@ -15,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={fontClasses}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={fontClasses}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
