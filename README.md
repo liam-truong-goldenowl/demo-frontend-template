@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Schedy
+
+Online Scheduling Application. Inspired by [Calendly](https://calendly.com/)
 
 ## Getting Started
 
-First, run the development server:
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Git** - [Download](https://git-scm.com/downloads)
+- **Node.js** (v22.x or newer) - [Download](https://nodejs.org/en)
+- **npm** (v10.x or newer) - Comes with Node.js
+
+### Installation
+
+Clone the repo
+
+```sh
+git clone git@github.com:liam-truong-goldenowl/nextjs-app-template.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Steps to Run Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A step by step guide that will tell you how to get the development environment up and running.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Navigate to the project folder
 
-## Learn More
+   ```sh
+   cd nextjs-app-template # Or your custom directory
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+1. Set environment variables (if applicable)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   cp .env.example .env.local
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Run development server
+   ```sh
+   npm run dev
+   ```
 
-## Deploy on Vercel
+### Steps to Run Design System (Storybook)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Navigate to the project folder
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```sh
+   cd nextjs-app-template # Or your custom directory
+   ```
+
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+1. Run Storybook
+   ```sh
+   npm run storybook
+   ```
+
+## Folder Structure
+
+```sh
+nextjs-app-template/
+│
+├── .github/                  # GitHub configuration files
+├── .storybook/               # Storybook entry
+├── .vscode/                  # VS Code config
+├── messages/                 # i18n messages
+├── next.config.ts            # Next.js config
+├── vitest.config.ts          # Vitest config
+├── postcss.config.mjs        # PostCSS config
+├── eslint.config.mjs         # ESLint config
+├── lint-staged.config.mjs    # lint-staged config
+├── commitlint.config.js      # commit-lint config
+├── lefthook.yml              # Lefthook config
+├── .prettierrc               # Prettier config
+├── public/                   # static assets (favicon, og-image, etc.)
+└── src/
+│   │
+│   ├── app/                  # App Router entry
+│   └── e2e/                  # Playwright/Cypress end-to-end tests
+│   ├── i18n/                 # i18n folder
+│   ├── modules/              # Isolated feature domains
+│   ├── shared/               # Reusable assets – NO business logic
+│   └── stories/              # Storybook stories for UI components
+│   ├── styles/               # Tailwind layers, fonts, overrides
+│   ├── tests/                # unit tests (e.g. Vitest or Jest)
+├── tsconfig.json             # TypeScript config
+├── README.md                 # README file
+```
+
+## Built With
+
+The project is built with the following technologies:
+
+- **[Next.js](https://nextjs.org/):** A React framework for building fast, scalable web applications with server-side rendering, static site generation, and API routes.
+- **[React.js](https://react.dev/):** A popular JavaScript library for building user interfaces using a component-based architecture.
+- **[TypeScript](https://www.typescriptlang.org/):** A strongly typed superset of JavaScript that adds static typing to improve code quality and maintainability.
+- **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for rapidly building custom, responsive user interfaces.
+- **[shadcn/ui](https://ui.shadcn.com/):** A collection of accessible and customizable UI components built on top of Radix UI and TailwindCSS.
+- **[Storybook](https://storybook.js.org/):** An open-source tool for developing, testing, and documenting UI components in isolation.
+
+These tools provide a modern, robust foundation for developing scalable and maintainable web applications.
+
+## Further Documentation
+
+1. Next.js App Router Documentation: [Next.js Docs](https://nextjs.org/docs)
+2. React.js Documentation: [React.js Docs](https://react.dev/reference/react)
+3. TailwindCSS Documentation: [TailwindCSS Docs](https://tailwindcss.com/)
+4. shadcn/ui Documentation: [shadcn/ui Docs](https://ui.shadcn.com/docs)
+5. Storybook Documentation: [Storybook Docs](https://storybook.js.org/docs)
