@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+
+  "ThemeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+
+  "LanguageSwitch": {
+    "en": "English",
+    "de": "Deutsch"
+  }
+}
