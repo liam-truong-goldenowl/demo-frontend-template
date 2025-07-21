@@ -6,7 +6,8 @@
   "ThemeToggle": {
     "light": "Light",
     "dark": "Dark",
-    "system": "System"
+    "system": "System",
+    "trigger": "Toggle theme"
   },
 
   "LanguageSwitch": {

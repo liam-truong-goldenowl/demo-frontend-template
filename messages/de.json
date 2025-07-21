@@ -6,7 +6,8 @@
   "ThemeToggle": {
     "light": "Hell",
     "dark": "Dunkel",
-    "system": "System"
+    "system": "System",
+    "trigger": "Theme wechseln"
   },
 
   "LanguageSwitch": {
