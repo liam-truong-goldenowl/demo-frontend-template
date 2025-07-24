@@ -1,6 +1,6 @@
-# Schedy
+# {Application Name}
 
-Online Scheduling Application. Inspired by [Calendly](https://calendly.com/)
+{Brief Introduction about the application}
 
 ## Getting Started
 
@@ -67,7 +67,7 @@ A step by step guide that will tell you how to get the development environment u
 ## Folder Structure
 
 ```sh
-nextjs-app-template/
+demo-frontend-project/
 │
 ├── .github/                  # GitHub configuration files
 ├── .storybook/               # Storybook entry
@@ -77,7 +77,6 @@ nextjs-app-template/
 ├── vitest.config.ts          # Vitest config
 ├── postcss.config.mjs        # PostCSS config
 ├── eslint.config.mjs         # ESLint config
-├── lint-staged.config.mjs    # lint-staged config
 ├── commitlint.config.js      # commit-lint config
 ├── lefthook.yml              # Lefthook config
 ├── .prettierrc               # Prettier config
